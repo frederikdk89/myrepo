@@ -1,5 +1,5 @@
 ---
-title: "RMarkdownTemplate"
+title: "Working with GIT"
 subtitle: ""
 author: "Frederik De Keersmaeker"
 date: "`r Sys.Date()`"
