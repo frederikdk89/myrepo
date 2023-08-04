@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(message = FALSE, echo = FALSE)
 ```
 
-# Section 1
+# Setting up git
 
 Here is the output of some code.
 
