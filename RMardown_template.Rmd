@@ -14,7 +14,7 @@ knitr::opts_chunk$set(message = FALSE, echo = FALSE)
 
 # Most important shell commands for GIT
 
-Here is the output of some code.
+Changes have already been made.
 
 ```{r chunk 1}
 x <- rnorm(100)
