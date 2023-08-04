@@ -1,0 +1,41 @@
+---
+title: "RMarkdownTemplate"
+subtitle: ""
+author: "Frederik De Keersmaeker"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    number_sections: true
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(message = FALSE, echo = FALSE)
+```
+
+# Section 1
+
+Here is the output of some code.
+
+```{r chunk 1}
+x <- rnorm(100)
+summary(x)
+```
+
+Here is the output of some code, together with the code that generated it.
+
+```{r chunk 2, echo=TRUE}
+x <- rnorm(100)
+median(x)
+```
+
+We can even mention the result in-line: the median of the simulated data is `r round(median(x), 3)`.
+
+## Formulas
+
+Here is an example of a formula: if $X$ is a continuous random variable, then its **expected value** is
+$$
+  \mathbb{E}[X] = \int_{-\infty}^\infty x f_X(x)dx,
+$$
+where $f_X$ is the probability density of $X$. Note that *not every continuous random variable has an expected value*: the integral defining $\mathbb{E}[X]$ does not convergence if $X$ follows a Cauchy distribution.
+
+
